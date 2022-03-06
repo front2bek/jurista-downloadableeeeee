@@ -2,6 +2,7 @@ import React, { useState, Fragment } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import logo from '../../images/logo/logo.png'
 import logo1 from '../../images/logo/logo.jpeg'
+import logo2 from '../../images/logo/logo2.png'
 import './style.scss'
 import { useTranslation } from "react-i18next";
 
@@ -28,7 +29,7 @@ const HeaderBottom = props => {
                         <div className="col-lg-3 col-md-10 col-sm-6 col-8">
                             <div className="logo">
                                 <NavLink to="/">
-                                    <img src={logo1} alt="" />
+                                    <img src={logo2} alt="" />
                                 </NavLink>
                             </div>
                         </div>
