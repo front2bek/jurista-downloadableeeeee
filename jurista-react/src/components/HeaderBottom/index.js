@@ -1,12 +1,15 @@
 import React, { useState, Fragment } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import logo from '../../images/logo/logo.png'
+import logo1 from '../../images/logo/logo.jpeg'
 import './style.scss'
+import { useTranslation } from "react-i18next";
 
 const HeaderBottom = props => {
     const [search, setSearch] = useState()
     const [responsive, setResponsive] = useState(false)
     const [trigger, setTrigger] = useState(false)
+    const { t } = useTranslation();
     const submitHandler = e => {
         e.preventDefault()
         console.log(search)
@@ -25,65 +28,52 @@ const HeaderBottom = props => {
                         <div className="col-lg-3 col-md-10 col-sm-6 col-8">
                             <div className="logo">
                                 <NavLink to="/">
-                                    <img src={logo} alt="" />
+                                    <img src={logo1} alt="" />
                                 </NavLink>
                             </div>
                         </div>
                         <div className={responsive ? "col-lg-8 responsiveWrapper active" : "col-lg-8 responsiveWrapper"}>
                             <ul className="mainMenuWrap">
-                                <li><NavLink exact to='/'>Home</NavLink>
-                                    <ul className="subMenu">
+                                <li><NavLink exact to='/'>{t("home")}</NavLink>
+                                    {/* <ul className="subMenu">
                                         <li><NavLink exact to='/'>Home One</NavLink></li>
                                         <li><NavLink exact to='/home-two'>Home Two</NavLink></li>
                                         <li><NavLink exact to='/home-three'>Home Three</NavLink></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
-                                <li><NavLink exact to='/about'>About</NavLink></li>
-                                <li><NavLink exact to='/practice'>Practice</NavLink>
+                                <li><NavLink exact to='/about'>{t("about")}</NavLink></li>
+                                <li><NavLink exact to='/practice'>{t("practice")}</NavLink>
                                     <ul className="subMenu">
                                         <li><NavLink exact to='/practice'>Practice areas</NavLink></li>
                                         <li><NavLink exact to='/practice-details'>Practice areas single</NavLink></li>
                                     </ul>
                                 </li>
 
-                                <li><NavLink exact to='/case-stadies'>Cases</NavLink>
+                                <li><NavLink exact to='/case-stadies'>{t("cases")}</NavLink>
                                     <ul className="subMenu">
                                         <li><NavLink exact to='/case-stadies'>Cases</NavLink></li>
                                         <li><NavLink exact to='/case-stadies-details'>Case single</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink exact to='/blog-left'>News</NavLink>
+                                <li><NavLink exact to='/blog-left'>{t("vesti")}</NavLink>
                                     <ul className="subMenu">
                                         <li><NavLink exact to='/blog-left'>Blog left sidebar</NavLink></li>
                                         <li><NavLink exact to='/blog-right'>Blog Right sidebar</NavLink></li>
                                         <li><NavLink exact to='/blog-fullwidth'>Blog FullWidth</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink exact to='/attorneys'>Attorneys</NavLink>
+                                <li><NavLink exact to='/attorneys'>{t("attorneys")}</NavLink>
                                     <ul className="subMenu">
                                         <li><NavLink exact to='/attorneys'>Attorneys</NavLink></li>
                                         <li><NavLink exact to='/attorneys-single'>Attorneys single</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink exact to='/contact'>Contact</NavLink></li>
+                                <li><NavLink exact to='/contact'>{t("contact")}</NavLink></li>
                             </ul>
                         </div>
                         <div className="col-lg-1 col-md-2 col-sm-6 col-4">
                             <div className="searchMenuWrapper">
-                                <div className="searchWrap">
-                                    <i onClick={clickHandler} className="fa fa-search"></i>
-                                    <div className={trigger ? 'searchform active' : 'searchform'}>
-                                        <form onSubmit={submitHandler}>
-                                            <input
-                                                placeholder="search here"
-                                                value={search}
-                                                type="text"
-                                                onChange={event => setSearch(event.target.value)}
-                                            />
-                                            <button><i className="fa fa-search"></i></button>
-                                        </form>
-                                    </div>
-                                </div>
+
                                 <div onClick={responsiveHandler} className="responsiveTrigger">
                                     <span className="first"></span>
                                     <span className="second"></span>

@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { Fragment, Component, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import HomePageOne from '../Pages/HomePageOne'
@@ -17,10 +17,12 @@ import BlogRightPage from '../Pages/BlogRightPage'
 import BlogFullWidth from '../Pages/BlogFullWidth'
 import './App.css';
 
+
 class App extends Component {
     render() {
         return (
             <Fragment>
+                <Suspense fallback={null}>
                 <BrowserRouter>
                     <ToastContainer autoClose={2500} position="top-center" />
                     <Routes>
@@ -40,6 +42,7 @@ class App extends Component {
                         <Route exact path="/blog-fullwidth" element={<BlogFullWidth/>} />
                     </Routes>
                 </BrowserRouter>
+                </Suspense>
             </Fragment>
         );
     }
