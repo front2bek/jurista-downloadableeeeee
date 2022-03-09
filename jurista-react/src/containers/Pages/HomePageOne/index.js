@@ -23,6 +23,7 @@ import portfolio2 from '../../../images/studies/2.jpg'
 import portfolio3 from '../../../images/studies/3.jpg'
 import portfolio4 from '../../../images/studies/4.jpg'
 import portfolio5 from '../../../images/studies/5.jpg'
+import { useTranslation } from "react-i18next";
 
 const aboutText = [
     { text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at ,' },
@@ -88,6 +89,7 @@ const portfolioItem = [
 ]
 
 const HomePageOne = () => {
+    const { t } = useTranslation();
     return (
         <Fragment>
             <header className="headerArea">

@@ -9,7 +9,7 @@ import PricingTable from "../../../components/PricingTable";
 import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
 // images
-import breadcumb from '../../../images/breadcumb/1.jpg'
+import breadcumb from '../../../images/breadcumb/ratnica2.jpg'
 
 import './style.scss'
 

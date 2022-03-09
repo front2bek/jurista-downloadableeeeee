@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Joi from 'joi-browser'
 import { toast } from 'react-toastify';
-import './style.scss'
+import './style.scss';
+import { withTranslation } from 'react-i18next';
 class Form extends Component {
     state = {
         name: '',
@@ -127,7 +128,7 @@ class Form extends Component {
     }
 
     render() {
-
+        const { t } = this.props;
         const options = [
             { level: 'Family Law', value: 'family law' },
             { level: 'Criminal Law', value: 'criminal law' },
@@ -143,7 +144,7 @@ class Form extends Component {
                     <div className="col-sm-6 col-12">
                         <div className="formInput">
                             <input
-                                placeholder="Your Name"
+                                placeholder={t("name")}
                                 value={this.state.name}
                                 name="name"
                                 onChange={this.changeHandler}
@@ -156,7 +157,7 @@ class Form extends Component {
                     <div className="col-sm-6 col-12">
                         <div className="formInput">
                             <input
-                                placeholder="Phone"
+                                placeholder={t("phone")}
                                 value={this.state.phone}
                                 name="phone"
                                 onChange={this.changeHandler}
@@ -182,7 +183,7 @@ class Form extends Component {
                             {this.props.addressInfo ? (
                                 <div className="formInput">
                                     <input
-                                        placeholder="Address"
+                                        placeholder={t("address")}
                                         value={this.state.address}
                                         name="address"
                                         onChange={this.changeHandler}
@@ -214,17 +215,17 @@ class Form extends Component {
                                 className="form-control"
                                 value={this.state.description}
                                 onChange={this.changeHandler}
-                                placeholder="Case Description..."
+                                placeholder={t("case_description")}
                                 name="description" />
                             {this.state.error.description && <p>{this.state.error.description}</p>}
                         </div>
                     </div>
                     <div className="col-12">
-                        <button type="submit">Appointment</button>
+                        <button type="submit">{t("send")}</button>
                     </div>
                 </div>
             </form>
         )
     }
 }
-export default Form
+export default withTranslation()(Form)

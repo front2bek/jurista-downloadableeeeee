@@ -6,10 +6,11 @@ import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
 import Portfolio from '../../../components/Portfolio'
 import ContactArea from '../../../components/ContactArea'
+import { useTranslation } from "react-i18next";
 
 // images
 import breadcumb from '../../../images/breadcumb/ratnica2.jpg'
-import team from '../../../images/Attorneys-single/1.jpg'
+import team from '../../../images/expert/rsz_vrabac.jpg'
 import portfolio1 from '../../../images/studies/1.jpg'
 import portfolio2 from '../../../images/studies/2.jpg'
 import portfolio3 from '../../../images/studies/3.jpg'
@@ -21,29 +22,33 @@ const breadcumbMenu = [
     { name: 'Attorneys', route: '/attorneys' },
     { name: 'Attorneys Details' }
 ]
-const teamMembarInfo = [
-    { level: 'Positon: ', text: 'Siniour Lawyer' },
-    { level: 'Practice Area: ', text: 'Family Lawyer, Criminal Defence, Personal Injury' },
-    { level: 'Experience: ', text: '10 Years' },
-    { level: 'Address: ', text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
-    { level: 'Phone: ', text: '0800.123.456' },
-    { level: 'Email: ', text: 'youremail@gmail.com' },
-    { level: 'Fax: ', text: ' 6985231456' },
-]
+
 const teamContents = [
-    'Admization Institute of Law andTechnology, Juzment School of Management,Cambridge',
-    'Academy University School of Law, Boston, MA',
-    'The Syntify High School Of New York',
-    'Education & Court Admissions',
+    'KK Div Basket',
+    'KK Partizan',
+    'KK Radnicki',
+    'KK Partizan',
 ]
 
-const portfolioItem = [
-    { images: portfolio1, title: 'General Service', subtitle: 'Corporate' },
-    { images: portfolio2, title: 'Personal Issue', subtitle: 'General' },
-    { images: portfolio3, title: 'Business Accounting', subtitle: 'Business' },
-]
+// const portfolioItem = [
+//     { images: portfolio1, title: 'General Service', subtitle: 'Corporate' },
+//     { images: portfolio2, title: 'Personal Issue', subtitle: 'General' },
+//     { images: portfolio3, title: 'Business Accounting', subtitle: 'Business' },
+// ]
 
 const SingleTeamPage = () => {
+    const { t } = useTranslation();
+
+    const teamMembarInfo = [
+        { level: t("position"), text: 'Siniour Lawyer' },
+        { level: t("practice_area")+ ": ", text: 'Family Lawyer, Criminal Defence, Personal Injury' },
+        { level: t("experience")+ ": ", text: '10 Years' },
+        { level: t("address")+ ": ", text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
+        { level: t("phone") + ": ", text: '0800.123.456' },
+        { level: 'Email: ', text: 'youremail@gmail.com' },
+        { level: 'Fax: ', text: ' 6985231456' },
+    ]
+
     return (
         <Fragment>
             <header className="headerArea">
@@ -66,12 +71,12 @@ const SingleTeamPage = () => {
                                         <div className="singleTeamImg">
                                             <img src={team} alt="" />
                                         </div>
-                                        <h4>Lily Watson</h4>
+                                        <h4>Vrabac</h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-12">
                                     <div className="singleTeamContent">
-                                        <h4>Important Information</h4>
+                                        <h4>{t("informations")}</h4>
                                         <ul className="teamMembarInfo">
                                             {teamMembarInfo.map((teamInfo, i) => (
                                                 <li key={i}>
@@ -90,16 +95,16 @@ const SingleTeamPage = () => {
                                 </div>
                                 <div className="col-12">
                                     <div className="singleTeamInfo">
-                                        <h3>Personal Experience</h3>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                                        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words,</p>
-                                        <h5>Education</h5>
+                                        <h3>{t("experience")}</h3>
+                                        <p>{t("single_experience1")}</p>
+                                        <p>{t("single_experience2")}</p>
+                                        <h5>{t("education")}</h5>
                                         <ul>
                                             {teamContents.map(teamContent => (
                                                 <li key={teamContent}>{teamContent}</li>
                                             ))}
                                         </ul>
-                                        <h5>Language</h5>
+                                        <h5>{t("languages")}</h5>
                                         <span>French(fluent), English (fluent), Greek , chinese.</span>
                                     </div>
                                 </div>

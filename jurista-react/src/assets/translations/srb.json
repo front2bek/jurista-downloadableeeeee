@@ -1,10 +1,44 @@
 {
-    "home": "naslovna",
-    "about": "o nama",
-    "practice": "oblasti",
-    "cases": "slucajevi",
-    "news": "vesti",
-    "attorneys": "advokati",
-    "contact": "kontakt"
+    "home": "Naslovna",
+    "about": "O Nama",
+    "practice": "Oblasti",
+    "cases": "Slucajevi",
+    "news": "Vesti",
+    "attorneys": "Advokati",
+    "contact": "Kontakt",
+
+    "our_contacts": "Kontakt",
+    "our_contacts_info": "Postojimo preko 20 godina. Ovde smo da Vam pomognemo. Kontaktirajte nas preko telefona, email-a ili preko kontakt forme",
+    "address": "Adresa",
+    "phone": "Telefon",
+    "contact_form": "Kontakt forma",
+
+    "our_team": "Nas tim",
+    "quick_links": "Brzi linkovi",
+
+    "family_law": "Porodicno pravo",
+    "criminal_law": "Kriminalno pravo",
+    "personal_injury": "Licne Povrede",
+    "real_estate_law": "Nekretnine",
+    "business_law": "Biznis pravo",
+    "footer_info": "Advokatska kancelarija sa iskustvom od preko 20 godina",
+
+    "qualified_attorneys": "Kvalifikovani advokati",
+    "meet_our_experts": "Upoznajte nase strucnjake",
+    "education": "Obrazovanje",
+    "languages": "Jezici",
+    "experience": "Iskustvo",
+    "informations": "Informacije",
+    "position": "Pozicija: ",
+    "practice_area": "Oblasti",
+    "single_experience1": "Moje iskustvo se sastoji od 20 godina rada u najjacim advokatskim firmama. Nema sta nisam savladao, prosto sam rodjen za to. Ako ne platis mene sada na drumu, platices sudu na Cupriji",
+    "single_experience2": "Ponavljam, moje iskustvo se sastoji od 20 godina rada u najjacim advokatskim firmama. Nema sta nisam savladao, prosto sam rodjen za to. Ako ne platis mene sada na drumu, platices sudu na Cupriji",
+    "case_description": "Opis slucaja",
+    "name": "Ime",
+    "send": "Posalji",
+    "sports_arbitration": "Sportska arbitraza",
+    "transfers" : "Transferi",
+    "some_of_ours": "Jedni Od Nasih",
+    "best_work": "Slucajeva na koje smo ponosni"
   }
   

@@ -11,11 +11,18 @@ import PortfolioPage from '../Pages/PortfolioPage'
 import SinglePortfolioPage from '../Pages/SinglePortfolioPage'
 import TeamPage from '../Pages/TeamPage'
 import SingleTeamPage from '../Pages/SingleTeamPage'
+import Bircevic from '../Pages/SingleTeamPage/bircevic.js'
+import Zagorac from '../Pages/SingleTeamPage/zagorac.js'
+import Gagic from '../Pages/SingleTeamPage/gagic.js'
+import Musli from '../Pages/SingleTeamPage/musli.js'
+import Cakarevic from '../Pages/SingleTeamPage/cakarevic.js'
+import Vrabac from '../Pages/SingleTeamPage/vrabac.js'
 import ContactPage from '../Pages/ContactPage'
 import BlogLeftPage from '../Pages/BlogLeftPage'
 import BlogRightPage from '../Pages/BlogRightPage'
 import BlogFullWidth from '../Pages/BlogFullWidth'
 import './App.css';
+import ScrollToTop from "./scrollToTop";
 
 
 class App extends Component {
@@ -25,7 +32,9 @@ class App extends Component {
                 <Suspense fallback={null}>
                 <BrowserRouter>
                     <ToastContainer autoClose={2500} position="top-center" />
+                    <ScrollToTop />
                     <Routes>
+                    
                         <Route exact path="/" element={<HomePageOne/>} />
                         <Route exact path="/home-two" element={<HomePageTwo/>} />
                         <Route exact path="/home-three" element={<HomePageThree/>} />
@@ -40,6 +49,12 @@ class App extends Component {
                         <Route exact path="/blog-left" element={<BlogLeftPage/>} />
                         <Route exact path="/blog-right" element={<BlogRightPage/>} />
                         <Route exact path="/blog-fullwidth" element={<BlogFullWidth/>} />
+                        <Route exact path="/bircevic" element={<Bircevic/>} />
+                        <Route exact path="/zagorac" element={<Zagorac/>} />
+                        <Route exact path="/gagic" element={<Gagic/>} />
+                        <Route exact path="/musli" element={<Musli/>} />
+                        <Route exact path="/cakarevic" element={<Cakarevic/>} />
+                        <Route exact path="/vrabac" element={<Vrabac/>} />
                     </Routes>
                 </BrowserRouter>
                 </Suspense>
