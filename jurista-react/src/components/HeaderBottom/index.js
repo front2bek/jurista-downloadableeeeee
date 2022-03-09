@@ -5,12 +5,14 @@ import logo1 from '../../images/logo/logo.jpeg'
 import logo2 from '../../images/logo/logo2.png'
 import './style.scss'
 import { useTranslation } from "react-i18next";
+import { yellow } from '@material-ui/core/colors'
 
 const HeaderBottom = props => {
     const [search, setSearch] = useState()
     const [responsive, setResponsive] = useState(false)
     const [trigger, setTrigger] = useState(false)
     const { t } = useTranslation();
+    
     const submitHandler = e => {
         e.preventDefault()
         console.log(search)
@@ -29,8 +31,9 @@ const HeaderBottom = props => {
                         <div className="col-lg-3 col-md-10 col-sm-6 col-8">
                             <div className="logo">
                                 <NavLink to="/">
-                                    <img src={logo2} alt="" />
+                                    <img className="logoImg" src={logo2} alt="" />
                                 </NavLink>
+                                <span style={{color: "#c0b596"}}> Adv kanc Pantelic-Djordjevic</span>
                             </div>
                         </div>
                         <div className={responsive ? "col-lg-8 responsiveWrapper active" : "col-lg-8 responsiveWrapper"}>
