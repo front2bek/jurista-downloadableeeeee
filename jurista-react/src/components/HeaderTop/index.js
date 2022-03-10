@@ -2,7 +2,6 @@ import React from 'react'
 import './style.scss'
 import LanguageSelect from '../../languageSelect';
 import { useTranslation } from "react-i18next";
-import srbFlag from "../../assets/flags/serbiasvg.png";
 
 const HeaderTop = (props) => {
     const { t } = useTranslation();

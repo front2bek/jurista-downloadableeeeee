@@ -12,7 +12,7 @@ const HeaderBottom = props => {
     const [responsive, setResponsive] = useState(false)
     const [trigger, setTrigger] = useState(false)
     const { t } = useTranslation();
-    
+
     const submitHandler = e => {
         e.preventDefault()
         console.log(search)
@@ -47,30 +47,30 @@ const HeaderBottom = props => {
                                 </li>
                                 <li><NavLink exact to='/about'>{t("about")}</NavLink></li>
                                 <li><NavLink exact to='/practice'>{t("practice")}</NavLink>
-                                    <ul className="subMenu">
-                                        <li><NavLink exact to='/practice'>Practice areas</NavLink></li>
+                                    {/* <ul className="subMenu">
+                                        <li><NavLink exact to='/practice'>{t("practice_areas")}</NavLink></li>
                                         <li><NavLink exact to='/practice-details'>Practice areas single</NavLink></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
 
                                 <li><NavLink exact to='/case-stadies'>{t("cases")}</NavLink>
-                                    <ul className="subMenu">
+                                    {/* <ul className="subMenu">
                                         <li><NavLink exact to='/case-stadies'>Cases</NavLink></li>
                                         <li><NavLink exact to='/case-stadies-details'>Case single</NavLink></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
-                                <li><NavLink exact to='/blog-left'>{t("vesti")}</NavLink>
+                                {/* <li><NavLink exact to='/blog-left'>{t("news")}</NavLink>
                                     <ul className="subMenu">
                                         <li><NavLink exact to='/blog-left'>Blog left sidebar</NavLink></li>
                                         <li><NavLink exact to='/blog-right'>Blog Right sidebar</NavLink></li>
                                         <li><NavLink exact to='/blog-fullwidth'>Blog FullWidth</NavLink></li>
                                     </ul>
-                                </li>
+                                </li> */}
                                 <li><NavLink exact to='/attorneys'>{t("attorneys")}</NavLink>
-                                    <ul className="subMenu">
+                                    {/* <ul className="subMenu">
                                         <li><NavLink exact to='/attorneys'>Attorneys</NavLink></li>
                                         <li><NavLink exact to='/attorneys-single'>Attorneys single</NavLink></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
                                 <li><NavLink exact to='/contact'>{t("contact")}</NavLink></li>
                             </ul>

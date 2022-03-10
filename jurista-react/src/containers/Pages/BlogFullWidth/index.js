@@ -12,7 +12,7 @@ import BlogPost from '../../../components/BlogPost'
 import Tags from '../../../components/Tags'
 import Instagram from '../../../components/Instagram'
 // images
-import breadcumb from '../../../images/breadcumb/1.jpg'
+import breadcumb from '../../../images/breadcumb/ratnica2.jpg'
 import './style.scss'
 
 const breadcumbMenu = [

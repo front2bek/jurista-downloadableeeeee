@@ -9,7 +9,7 @@ import BannerSidebar from '../../../components/BannerSidebar'
 import SingleContentArea from '../../../components/SingleContentArea'
 
 // images
-import breadcumb from '../../../images/breadcumb/1.jpg'
+import breadcumb from '../../../images/breadcumb/ratnica2.jpg'
 import banner from '../../../images/practice/2.jpg'
 import single from '../../../images/practice/3.jpg'
 

@@ -6,13 +6,14 @@ import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
 import Portfolio from '../../../components/Portfolio'
 // images
-import breadcumb from '../../../images/breadcumb/1.jpg'
+import breadcumb from '../../../images/breadcumb/ratnica2.jpg'
 // images
-import portfolio1 from '../../../images/studies/1.jpg'
-import portfolio2 from '../../../images/studies/2.jpg'
-import portfolio3 from '../../../images/studies/3.jpg'
-import portfolio4 from '../../../images/studies/4.jpg'
-import portfolio5 from '../../../images/studies/5.jpg'
+import portfolio1 from '../../../images/studies/partizan.jpg'
+import portfolio2 from '../../../images/studies/partizan.jpg'
+import portfolio3 from '../../../images/studies/partizan.jpg'
+import portfolio4 from '../../../images/studies/partizan.jpg'
+import portfolio5 from '../../../images/studies/partizan.jpg'
+import { useTranslation } from "react-i18next";
 
 import './style.scss'
 
@@ -21,19 +22,20 @@ const breadcumbMenu = [
     { name: 'Resent Case Studies' }
 ]
 
-const portfolioItem = [
-    { images: portfolio1, title: 'General Service', subtitle: 'Corporate' },
-    { images: portfolio2, title: 'Personal Issue', subtitle: 'General' },
-    { images: portfolio3, title: 'Business Accounting', subtitle: 'Business' },
-    { images: portfolio4, title: 'Accounting issue', subtitle: 'Criminal' },
-    { images: portfolio5, title: 'Business Accounting', subtitle: 'Family Issue' },
-    { images: portfolio1, title: 'General Service', subtitle: 'Corporate' },
-    { images: portfolio2, title: 'Personal Issue', subtitle: 'General' },
-    { images: portfolio3, title: 'Business Accounting', subtitle: 'Business' },
-    { images: portfolio4, title: 'Accounting issue', subtitle: 'Criminal' },
-]
 
 const PortfolioPage = () => {
+    const { t } = useTranslation();
+    const portfolioItem = [
+        { images: portfolio1, title: t("sports_arbitration"), subtitle: t("transfers")},
+        { images: portfolio2, title: t("sports_arbitration"), subtitle: t("transfers") },
+        { images: portfolio3, title: t("sports_arbitration"), subtitle: t("transfers")},
+        { images: portfolio4, title: t("sports_arbitration"), subtitle: t("transfers") },
+        { images: portfolio5, title: t("sports_arbitration"), subtitle: t("transfers") },
+        { images: portfolio1, title: t("sports_arbitration"), subtitle: t("transfers")},
+        { images: portfolio2, title: t("sports_arbitration"), subtitle: t("transfers") },
+        { images: portfolio3, title: t("sports_arbitration"), subtitle: t("transfers") },
+        { images: portfolio4, title: t("sports_arbitration"), subtitle: t("transfers") },
+    ]
     return (
         <Fragment>
             <header className="headerArea">
@@ -50,8 +52,8 @@ const PortfolioPage = () => {
             />
 
             <Portfolio
-                title="Our Resent Case Studies"
-                subTitle="Here Our Best Work"
+                title={t("best_work")}
+                subTitle={t("some_of_ours")}
                 fullWidth={true}
                 portfolioItem={portfolioItem}
                 className="portfolioArea portfolioAreaStyleTwo"

@@ -10,7 +10,7 @@ import SingleContentArea from '../../../components/SingleContentArea'
 import RecentPosts from '../../../components/RecentPosts'
 import Portfolio from '../../../components/Portfolio'
 // images
-import breadcumb from '../../../images/breadcumb/1.jpg'
+import breadcumb from '../../../images/breadcumb/ratnica2.jpg'
 import single from '../../../images/practice/3.jpg'
 // images
 import portfolio1 from '../../../images/studies/1.jpg'

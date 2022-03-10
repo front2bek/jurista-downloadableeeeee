@@ -4,47 +4,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SectionTitle from '../Title'
 import './style.scss'
+import { NavLink } from 'react-router-dom'
 
 // images
-import teamMember1 from '../../images/expert/1.jpg'
-import teamMember2 from '../../images/expert/2.jpg'
-import teamMember3 from '../../images/expert/3.jpg'
-import teamMember4 from '../../images/expert/4.jpg'
-import teamMember5 from '../../images/expert/5.jpg'
-import teamMember6 from '../../images/expert/6.jpg'
+import teamMember1 from '../../images/expert/rsz_bircevic.jpg'
+import teamMember2 from '../../images/expert/rsz_zagorac.jpg'
+import teamMember3 from '../../images/expert/rsz_gagic.jpg'
+import teamMember4 from '../../images/expert/rsz_musli.jpg'
+import teamMember5 from '../../images/expert/rsz_cakarevic.jpg'
+import teamMember6 from '../../images/expert/rsz_vrabac.jpg'
+import { useTranslation } from "react-i18next";
 
-const teams = [
-    {
-        name: 'Alecgander Harry', level: 'Business Lawyer', image: teamMember1, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: 'Lily Watson', level: 'Family Lawyer', image: teamMember2, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: 'Willam Stephen', level: 'Criminal Lawyer', image: teamMember3, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: 'Eshan Golly', level: 'Business Lawyer', image: teamMember4, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: 'Daniel Dambeldor', level: 'Family Lawyer', image: teamMember5, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: 'Darcy Alec', level: 'Criminal Lawyer', image: teamMember6, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-]
+
 
 const settings = {
     dots: false,
@@ -83,6 +54,39 @@ const settings = {
     ]
 };
 const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
+    const { t } = useTranslation();
+    const teams = [
+        {
+            name: 'Bircevic', level: t("criminal_law"), url: '/bircevic', image: teamMember1, socialMedia: [
+                'facebook', 'twitter', 'linkedin'
+            ]
+        },
+        {
+            name: 'Rade Zagorac', level: t("family_law"), url: '/zagorac', image: teamMember2, socialMedia: [
+                'facebook', 'twitter', 'linkedin'
+            ]
+        },
+        {
+            name: 'Djordje Gagic', level: t("criminal_law"), url: '/gagic', image: teamMember3, socialMedia: [
+                'facebook', 'twitter', 'linkedin'
+            ]
+        },
+        {
+            name: 'Dejan Musli', level: t("real_estate_law"), url: '/musli', image: teamMember4, socialMedia: [
+                'facebook', 'twitter', 'linkedin'
+            ]
+        },
+        {
+            name: 'Marko Cakarevic', level: t("real_estate_law"), url: '/cakarevic', image: teamMember5, socialMedia: [
+                'facebook', 'twitter', 'linkedin'
+            ]
+        },
+        {
+            name: 'Edin Vrabac', level: t("criminal_law"), url: '/vrabac', image: teamMember6, socialMedia: [
+                'facebook', 'twitter', 'linkedin'
+            ]
+        },
+    ]
     return (
         <div className={className}>
             <div className="container">
@@ -97,9 +101,14 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                         <div className="col-12">
                             <Slider className="teamSlideArea" {...settings}>
                                 {teams.map((team, i) => (
+                                    
                                     <div key={i} className="teamWrapper">
                                         <div className="teamImage">
+                                        <NavLink exact to={team.url}>
+                                            <div>
                                             <img src={team.image} alt="" />
+                                            </div>
+                                            </NavLink>
                                         </div>
                                         <div className="teamContent">
                                             <h3>{team.name}</h3>
@@ -111,7 +120,9 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                                             </ul>
                                         </div>
                                     </div>
-                                ))}
+                                    
+                                    )
+                                )}
                             </Slider>
                         </div>
                     ) : (
@@ -120,7 +131,11 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                                     <div key={i} className="col-lg-4 col-md-6 col-12">
                                         <div className="teamWrapper">
                                             <div className="teamImage">
-                                                <img src={team.image} alt="" />
+                                            <NavLink exact to={team.url}>
+                                            <div>
+                                            <img src={team.image} alt="" />
+                                            </div>
+                                            </NavLink>
                                             </div>
                                             <div className="teamContent">
                                                 <h3>{team.name}</h3>

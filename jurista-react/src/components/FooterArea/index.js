@@ -1,38 +1,41 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../images/logo/logo.png'
+import logo from '../../images/logo/logo2.png'
 import './style.scss'
-const footerLinks = [
-    {
-        title: 'Quick Link', menus: [
-            { name: 'Home', route: '/' },
-            { name: 'Practice Area', route: 'practice' },
-            { name: 'Our Team', route: 'team' },
-            { name: 'Recent Case', route: 'case' },
-            { name: 'Our Blog', route: 'blog' },
-        ]
-    },
-    {
-        title: 'Practice Area', menus: [
-            { name: 'Family Law', route: 'home' },
-            { name: 'Criminal Law', route: 'home' },
-            { name: 'Parsonal Injury', route: 'home' },
-            { name: 'Real Estate Law', route: 'home' },
-            { name: 'Business Law', route: 'home' },
-        ]
-    },
-    {
-        title: 'Contact Us', menus: [
-            { name: 'Head Office Address' },
-            { name: '121 King Street, Melbourne West,', },
-            { name: 'Australia', },
-            { name: 'Phone: 888 123-4587', },
-            { name: 'Email: info@example.com', },
-        ]
-    },
-]
+import { useTranslation } from "react-i18next";
 
 const FooterArea = () => {
+    const { t } = useTranslation();
+
+    const footerLinks = [
+        {
+            title: t("quick_links"), menus: [
+                { name: t("home"), route: ' ' },
+                { name: t("practice"), route: 'practice' },
+                { name: t("our_team"), route: 'attorneys' },
+                { name: t("cases"), route: 'case-stadies' },
+                { name: t("contact"), route: 'contact' }
+            ]
+        },
+        {
+            title: t("cases"), menus: [
+                { name: t("family_law") },
+                { name: t("criminal_law") },
+                { name: t("personal_injury")},
+                { name: t("real_estate_law") },
+                { name: t("business_law")}
+            ]
+        },
+        {
+            title: t("Kontakt"), menus: [
+                { name: 'Nusiceva 6', },
+                { name: 'Beograd', },
+                { name: 'Phone: 888 123-4587', },
+                { name: 'Email: advokati_nusiceva@example.com', },
+            ]
+        },
+    ]
+
     return (
         <footer className="footerArea">
             <div className="footerTopArea">
@@ -43,7 +46,7 @@ const FooterArea = () => {
                                 <Link to="/">
                                     <img src={logo} alt="" />
                                 </Link>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                                <p>{t("footer_info")}</p>
                             </div>
                         </div>
                         {footerLinks.map((menu, i) => (
@@ -64,10 +67,10 @@ const FooterArea = () => {
             <div className="footerBottomArea">
                 <div className="container">
                     <div className="footerBottomContent">
-                        <div className="row">
-                            <div className="col-md-8 col-sm-10 col-12">
+                        <div className="row"  style={{float: 'right'}}>
+                            {/* <div className="col-md-8 col-sm-10 col-12">
                                 <span>Privacy Policy | © 2018 Barristar. All rights reserved</span>
-                            </div>
+                            </div> */}
                             <div className="col-md-4 col-sm-2 col-12">
                                 <ul className="socialListFooter">
                                     <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>

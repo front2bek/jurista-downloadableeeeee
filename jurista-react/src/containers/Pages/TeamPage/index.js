@@ -6,7 +6,9 @@ import TeamMember from '../../../components/TeamMember'
 import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
 // images
-import breadcumb from '../../../images/breadcumb/1.jpg'
+import breadcumb from '../../../images/breadcumb/ratnica2.jpg'
+import { useTranslation } from "react-i18next";
+
 
 import './style.scss'
 
@@ -16,6 +18,7 @@ const breadcumbMenu = [
 ]
 
 const TeamPage = () => {
+    const { t } = useTranslation();
     return (
         <Fragment>
             <header className="headerArea">
@@ -29,8 +32,8 @@ const TeamPage = () => {
                 background={breadcumb}
             />
             <TeamMember
-                title="Qualified Attorneys "
-                subTitle="Meet Our Experts"
+                title={t("qualified_attorneys")}
+                subTitle= {t("meet_our_experts")}
                 className="teamArea teamAreaStyleTwo"
                 noGutters={true}
             />
