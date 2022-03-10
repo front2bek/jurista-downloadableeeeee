@@ -118,9 +118,9 @@ const SingleTeamPage = () => {
             <ContactArea
                 className="contactArea"
             />
-            <NewsLetter
+            {/* <NewsLetter
                 className="newsLetterArea"
-            />
+            /> */}
             <FooterArea />
         </Fragment>
     )

@@ -78,9 +78,9 @@ const SinglePortfolioPage = () => {
                 portfolioItem={portfolioItem}
                 className="portfolioArea portfolioAreaStyleFour"
             />
-            <NewsLetter
+            {/* <NewsLetter
                 className="newsLetterArea"
-            />
+            /> */}
             <FooterArea />
         </Fragment>
     )

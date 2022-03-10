@@ -31,16 +31,16 @@ const aboutText = [
 const heroSliders = [
     {
         images: 'slideWrapperThree',
-        title: 'We Fight For Your Justice',
-        subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Frim',
+        title: 'Title 3',
+        subTitle: 'Sub title 3',
+        text: 'text 3',
         button: 'Contact us now'
     },
     {
         images: 'slideWrapperFour',
-        title: 'We Fight For Your Justice',
-        subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Frim',
+        title: 'Title 4',
+        subTitle: 'Sub title 4',
+        text: 'text 4',
         button: 'Contact us now'
     },
 ]
@@ -139,9 +139,9 @@ const HomePageTwo = () => {
                 subTitle="From Our Blog
                 "
             />
-            <NewsLetter
+            {/* <NewsLetter
                 className="newsLetterArea"
-            />
+            /> */}
             <FooterArea/>
         </Fragment>
     )

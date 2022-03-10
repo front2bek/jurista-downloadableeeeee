@@ -108,9 +108,9 @@ const AboutPage = () => {
                 subTitle="From Our Blog
                 "
             />
-            <NewsLetter
+            {/* <NewsLetter
                 className="newsLetterArea"
-            />
+            /> */}
             <FooterArea/>
         </Fragment>
     )

@@ -13,6 +13,7 @@ import CounterArea from '../../../components/CounterArea'
 import BlogArea from '../../../components/BlogArea'
 import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
+
 // images
 import about from '../../../images/about/2.jpg'
 import signature from '../../../images/about/1.png'
@@ -120,9 +121,6 @@ const HomePageOne = () => {
             <Testmonial
                 className="testmonialArea"
             />
-            <ContactArea
-                className="contactArea"
-            />
             <TeamMember
                 title="Qualified Attorneys "
                 subTitle="Meet Our Experts"
@@ -132,14 +130,17 @@ const HomePageOne = () => {
             <CounterArea
                 className="counterArea"
             />
-            <BlogArea
+            {/* <BlogArea
                 className="blogArea"
                 title="Latest News"
                 subTitle="From Our Blog
                 "
-            />
-            <NewsLetter
+            /> */}
+            {/* <NewsLetter
                 className="newsLetterArea"
+            /> */}
+            <ContactArea
+                className="contactArea"
             />
             <FooterArea/>
         </Fragment>

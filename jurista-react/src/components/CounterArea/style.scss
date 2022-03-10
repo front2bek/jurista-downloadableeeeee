@@ -1,6 +1,7 @@
 .counterArea{
     padding: 100px 0px;
-    background: url(../../images/counter/1.jpg)  center center/cover no-repeat local;
+    background: url(../../images/custom/test11920x625.webp)  center center/cover no-repeat local;
+    // background: url(../../images/counter/1.jpg)  center center/cover no-repeat local;
     .counterMainWrapper{
         display: flex;
         flex-wrap: wrap;
@@ -43,7 +44,8 @@
         }
     }
     &.counterAreaStyleTwo{
-        background: url(../../images/counter/2.jpg) center center/cover no-repeat local;
+        // background: url(../../images/counter/2.jpg) center center/cover no-repeat local;
+        background: url(../../images/custom/test25441x3628.webp) center center/cover no-repeat local;
         background-attachment: fixed;
         position: relative;
         &::before{

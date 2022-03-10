@@ -84,9 +84,9 @@ const PracticePage = () => {
             <Testmonial
                 className="testmonialArea pt100"
             />
-            <NewsLetter
+            {/* <NewsLetter
                 className="newsLetterArea"
-            />
+            /> */}
             <FooterArea/>
         </Fragment>
     )

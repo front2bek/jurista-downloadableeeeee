@@ -53,9 +53,9 @@ const BlogRightPage = () => {
                     </div>
                 </div>
             </div>
-            <NewsLetter
+            {/* <NewsLetter
                 className="newsLetterArea"
-            />
+            /> */}
             <FooterArea />
         </Fragment>
     )

@@ -62,9 +62,9 @@ const PracticeSinglePage = () => {
                     </div>
                 </div>
             </div>
-            <NewsLetter
+            {/* <NewsLetter
                 className="newsLetterArea"
-            />
+            /> */}
             <FooterArea />
         </Fragment>
     )

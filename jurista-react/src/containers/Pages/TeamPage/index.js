@@ -34,9 +34,9 @@ const TeamPage = () => {
                 className="teamArea teamAreaStyleTwo"
                 noGutters={true}
             />
-            <NewsLetter
+            {/* <NewsLetter
                 className="newsLetterArea"
-            />
+            /> */}
             <FooterArea />
         </Fragment>
     )
