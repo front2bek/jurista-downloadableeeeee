@@ -4,24 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './style.scss'
 
-// images
-import testmonial from '../../images/testimonial/1.png'
-import testmonial2 from '../../images/testimonial/2.png'
+import { useTranslation } from "react-i18next";
 
-const sliders = [
-    {
-        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,',
-        images: testmonial2,
-        title: 'Jhony Goaver',
-        subTitle: 'CEO of American BDS'
-    },
-    {
-        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,',
-        images: testmonial2,
-        title: 'Jhony Goaver',
-        subTitle: 'CEO of American BDS'
-    }
-]
+// images
+import testmonial from '../../images/custom/review.jpg'
+import testmonial2 from '../../images/custom/birca.png'
+
+
 const settings = {
     dots: true,
     infinite: true,
@@ -33,6 +22,23 @@ const settings = {
     autoplaySpeed: 3000,
 };
 const Testmonial = ({ className }) => {
+    const { t } = useTranslation();
+
+    const sliders = [
+        {
+            text: 'Usluga i ljudi na izuzetnom nivou!',
+            images: testmonial2,
+            title: 'Djordje Gagic',
+            subTitle: 'Bivsi MVP Partizana'
+        },
+        {
+            text: 'Odlicno iskustvo za svaku preporuku!',
+            images: testmonial2,
+            title: 'Brajan Skalabrini',
+            subTitle: 'Bivsi MVP NBA'
+        }
+    ]
+
     return (
         <div className={className}>
             <div className="container">
@@ -44,8 +50,8 @@ const Testmonial = ({ className }) => {
                     </div>
                     <div className="col-lg-7 offset-lg-1 col-md-6">
                         <div className="testimonialContent">
-                            <span>What People Say</span>
-                            <h2>Client Testimonial</h2>
+                            <span>{t('testemonial-feedback-title')}</span>
+                            <h2>{t('testemonial-feedback-header')}</h2>
                             <Slider className="testmonialSlider" {...settings}>
                                 {sliders.map((slider, i) => (
                                     <div key={i} className="slideItem">

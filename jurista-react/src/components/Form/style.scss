@@ -1,8 +1,24 @@
 .contactForm{
     .formInput{
         margin-bottom: 30px;
-        input,
-        textarea,
+        input{
+            position: relative;
+            // display: inline-block;
+            background: rgba(192, 181, 150, .2);
+            border: 1px solid rgba(192, 181, 150, .5);
+            color: #fff;
+            height: 50px;
+            padding: 6px 15px;
+            &:focus{
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                border-color: #c0b596;
+            }
+            &::-webkit-input-placeholder{
+                color: #bbb5a5;
+                font-size: 14px;
+            }
+        }
         select{
             background: rgba(192, 181, 150, .2);
             height: 50px;
@@ -35,8 +51,24 @@
         textarea{
             height: 150px;
             padding: 15px;
+            position: relative;
+            // display: inline-block;
+            background: rgba(192, 181, 150, .2);
+            border: 1px solid rgba(192, 181, 150, .5);
+            color: #fff;
+            padding: 6px 15px;
+            &:focus{
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                border-color: #c0b596;
+            }
+            &::-webkit-input-placeholder{
+                color: #bbb5a5;
+                font-size: 14px;
+            }
         }
         p{
+            position: relative;
             text-transform: uppercase;
             font-size: 12px;
             color: #c0b596;
@@ -46,6 +78,7 @@
     button{
         font-size: 15px;
         font-weight: 700;
+        position: relative;
         color: #fff;
         padding: 9px 25px;
         border: 2px solid transparent;

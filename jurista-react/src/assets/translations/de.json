@@ -2,5 +2,14 @@
     "select_language": "Choisir la langue",
     "hello_welcome_to_react": "Bonjour, Bienvenue chez React",
     "this_is_an_example": "Ceci est un exemple",
-    "please_enter_name": "Veuillez saisir le nom"
+    "please_enter_name": "Veuillez saisir le nom",
+
+
+    "tile_percent_won_cases": "todo",
+    "tile_numberofclients": "todo",
+    "tile_numberoflawyers": "todo",
+    "tile_percent_dismissed_cases": "todo",
+
+    "testemonial-feedback-title":"todo",
+    "testemonial-feedback-header":"todo"
   }

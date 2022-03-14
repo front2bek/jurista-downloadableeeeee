@@ -130,13 +130,21 @@ class Form extends Component {
     render() {
         const { t } = this.props;
         const options = [
-            { level: 'Family Law', value: 'family law' },
-            { level: 'Criminal Law', value: 'criminal law' },
-            { level: 'Business Law', value: 'business law' },
-            { level: 'Personal Injury', value: 'personal injury' },
-            { level: 'Education Law', value: 'education law' },
-            { level: 'Drugs Crime', value: 'drugs crime' },
+            { level: t("lawtype-family"), value: 'family law' },
+            { level: t("lawtype-criminal"), value: 'criminal law' },
+            { level: t("lawtype-business"), value: 'business law' },
+            { level: t("lawtype-personalinjury"), value: 'personal injury' },
+            { level: t("lawtype-education"), value: 'education law' },
+            { level: t("lawtype-drugscrime"), value: 'drugs crime' },
         ]
+        const cetagoryMenu = [
+            { level: t("lawtype-family"), route: "case-stadies-details" },
+            { level: t("lawtype-criminal"), route: "case-stadies-details" },
+            { level: t("lawtype-business"), route: "case-stadies-details" },
+            { level: t("lawtype-personalinjury"), route: "case-stadies-details" },
+            { level: t("lawtype-education"), route: "case-stadies-details" },
+            { name: t("lawtype-drugscrime"), route: "case-stadies-details" },
+          ];
 
         return (
             <form onSubmit={this.submitHandler} className='contactForm'>

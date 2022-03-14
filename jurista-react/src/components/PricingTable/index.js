@@ -1,27 +1,32 @@
 import React from 'react'
 import SectionTitle from '../Title'
 import './style.scss'
-const pricingpanel = [
-    {
-        icon: 'flaticon-scale',
-        title: 'Started Plan',
-        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-        price: '$120',
-    },
-    {
-        icon: 'flaticon-scale',
-        title: 'Basic Plan',
-        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-        price: '$150',
-    },
-    {
-        icon: 'flaticon-scale',
-        title: 'Advanced Plan',
-        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-        price: '$180',
-    },
-]
+import { useTranslation } from "react-i18next";
+
 const PricingTable = ({ className, title, subTitle }) => {
+    const { t } = useTranslation();
+
+    const pricingpanel = [
+        {
+            icon: 'flaticon-scale',
+            title: t('pricing-basicpackage'),
+            text: t('pricing-basicpackage-desc'),
+            price: '$120',
+        },
+        {
+            icon: 'flaticon-scale',
+            title: t('pricing-advancedpackage'),
+            text: t('pricing-advancedpackage-desc'),
+            price: '$150',
+        },
+        {
+            icon: 'flaticon-scale',
+            title: t('pricing-premiumpackage'),
+            text: t('pricing-premiumpackage-desc'),
+            price: '$180',
+        },
+    ];
+
     return (
         <div className={className}>
             <div className="container">
@@ -40,7 +45,7 @@ const PricingTable = ({ className, title, subTitle }) => {
                                 <h2>{pricing.price}</h2>
                                 <p>{pricing.text}</p>
                                 <div className="btnStyle">
-                                    <button>Get Started</button>
+                                    <button>{t('pricing-getstarted-button')}</button>
                                 </div>
                                 
                             </div>

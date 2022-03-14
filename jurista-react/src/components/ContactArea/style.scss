@@ -1,5 +1,5 @@
 .contactArea{
-    background: url(../../images/custom/test25441x3628.webp) center center/cover no-repeat local;
+    background: url(../../images/custom/rsz_11ezgifcom-gif-maker.jpg) center center/cover no-repeat local;
     //http://jurista.hellloexpert.com/static/media/1.e0d61846.jpg
     // background: url(../../images/contact/1.jpg) center center/cover no-repeat local;
     position: relative;
@@ -19,6 +19,7 @@
             margin-bottom: 40px;
         }
         span{
+            position: relative;
             font-size: 16px;
             color: #ada282;
         }
@@ -28,22 +29,22 @@
             margin-top: 10px;
             color: #fff;
             position: relative;
-            display: inline-block;
-            &::before{
-                content: "";
-                position: absolute;
-                right: -68px;
-                top: 25px;
-                width: 60px;
-                height: 1px;
-                background: #c0b596;
-                @media (max-width:1200px) {
-                    width: 30px;
-                    left: -35px;
-                }
-            }
+            // &::before{
+            //     content: "";
+            //     position: absolute;
+            //     right: -68px;
+            //     top: 25px;
+            //     width: 60px;
+            //     height: 1px;
+            //     background: #c0b596;
+            //     @media (max-width:1200px) {
+            //         width: 30px;
+            //         left: -35px;
+            //     }
+            // }
         }
         h6{
+            position: relative;
             font-size: 18px;
             color: #c0b596;
             font-family: 'Open Sans', sans-serif;
@@ -52,6 +53,7 @@
             }
         }
         p{
+            position: relative;
             margin-top: 30px;
             color: #ddd;
             line-height: 30px;

@@ -1,13 +1,16 @@
 import React from 'react'
 import Odometer from 'react-odometerjs';
 import './style.scss'
-const counters = [
-    { value: '95', title: 'Cases Won', level: '%' },
-    { value: '863', title: 'Trusted Client' },
-    { value: '126', title: 'Dedicated Lawyer', level: '+' },
-    { value: '25', title: 'Case Dismissed', level: '%' },
-]
+import { useTranslation } from "react-i18next";
+
 const CounterArea = ({ className, fullWidth }) => {
+    const { t } = useTranslation();
+    const counters = [
+        { value: '95', title: t('tile_percent_won_cases'), level: '%' },
+        { value: '863', title: t('tile_numberofclients') },
+        { value: '126', title: t('tile_numberoflawyers') },
+        { value: '25', title: t('tile_percent_dismissed_cases'), level: '%' },
+    ];
     return (
         <div className={className}>
             <div className="container">
