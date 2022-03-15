@@ -44,17 +44,17 @@ class App extends Component {
                         <Route exact path="/case-stadies" element={<PortfolioPage/>} />
                         <Route exact path="/case-stadies-details" element={<SinglePortfolioPage/>} />
                         <Route exact path="/attorneys" element={<TeamPage/>} />
-                        <Route exact path="/attorneys-single" element={<SingleTeamPage/>} />
+                        <Route exact path="/attorney/:attorneyName" element={<SingleTeamPage/>} />
                         <Route exact path="/contact" element={<ContactPage/>} />
                         <Route exact path="/blog-left" element={<BlogLeftPage/>} />
                         <Route exact path="/blog-right" element={<BlogRightPage/>} />
                         <Route exact path="/blog-fullwidth" element={<BlogFullWidth/>} />
-                        <Route exact path="/bircevic" element={<Bircevic/>} />
+                        {/* <Route exact path="/bircevic" element={<Bircevic/>} />
                         <Route exact path="/zagorac" element={<Zagorac/>} />
                         <Route exact path="/gagic" element={<Gagic/>} />
                         <Route exact path="/musli" element={<Musli/>} />
                         <Route exact path="/cakarevic" element={<Cakarevic/>} />
-                        <Route exact path="/vrabac" element={<Vrabac/>} />
+                        <Route exact path="/vrabac" element={<Vrabac/>} /> */}
                     </Routes>
                 </BrowserRouter>
                 </Suspense>

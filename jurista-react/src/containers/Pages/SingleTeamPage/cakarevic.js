@@ -27,7 +27,6 @@ const teamContents = [
     'KK Div Basket',
     'KK Partizan',
     'KK Radnicki',
-    'KK Partizan',
 ]
 
 // const portfolioItem = [
