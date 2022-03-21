@@ -57,32 +57,32 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
     const { t } = useTranslation();
     const teams = [
         {
-            name: 'Bircevic', level: t("criminal_law"), url: '/attorney/bircevic', image: teamMember1, socialMedia: [
+            name: 'Bircevic', level: t("criminal_law"), url: '/attorney/1', image: teamMember1, socialMedia: [
                 'facebook', 'twitter', 'linkedin'
             ]
         },
         {
-            name: 'Rade Zagorac', level: t("family_law"), url: '/attorney/zagorac', image: teamMember2, socialMedia: [
+            name: 'Rade Zagorac', level: t("family_law"), url: '/attorney/6', image: teamMember2, socialMedia: [
                 'facebook', 'twitter', 'linkedin'
             ]
         },
         {
-            name: 'Djordje Gagic', level: t("criminal_law"), url: '/attorney/gagic', image: teamMember3, socialMedia: [
+            name: 'Djordje Gagic', level: t("criminal_law"), url: '/attorney/3', image: teamMember3, socialMedia: [
                 'facebook', 'twitter', 'linkedin'
             ]
         },
         {
-            name: 'Dejan Musli', level: t("real_estate_law"), url: '/attorney/musli', image: teamMember4, socialMedia: [
+            name: 'Dejan Musli', level: t("real_estate_law"), url: '/attorney/4', image: teamMember4, socialMedia: [
                 'facebook', 'twitter', 'linkedin'
             ]
         },
         {
-            name: 'Marko Cakarevic', level: t("real_estate_law"), url: '/attorney/cakarevic', image: teamMember5, socialMedia: [
+            name: 'Marko Cakarevic', level: t("real_estate_law"), url: '/attorney/2', image: teamMember5, socialMedia: [
                 'facebook', 'twitter', 'linkedin'
             ]
         },
         {
-            name: 'Edin Vrabac', level: t("criminal_law"), url: '/attorney/vrabac', image: teamMember6, socialMedia: [
+            name: 'Edin Vrabac', level: t("criminal_law"), url: '/attorney/5', image: teamMember6, socialMedia: [
                 'facebook', 'twitter', 'linkedin'
             ]
         },
