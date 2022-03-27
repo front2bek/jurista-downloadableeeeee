@@ -47,9 +47,9 @@ const About = ({
               {pragraphs.map((pragraph, i) => (
                 <p key={i}>{pragraph.text}</p>
               ))}
-              <div className="btnStyle">
+              {/* <div className="btnStyle">
                 <Link to="/about">{t('about-moreaboutus')}</Link>
-              </div>
+              </div> */}
               {signature && (
                 <div className="signature">
                   <img src={signature} alt="" />

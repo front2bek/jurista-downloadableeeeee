@@ -17,6 +17,7 @@ import Gagic from '../Pages/SingleTeamPage/gagic.js'
 import Musli from '../Pages/SingleTeamPage/musli.js'
 import Cakarevic from '../Pages/SingleTeamPage/cakarevic.js'
 import Vrabac from '../Pages/SingleTeamPage/vrabac.js'
+import LawtypeFamily from '../Pages/PracticeSinglePage/lawtype-family.js'
 import ContactPage from '../Pages/ContactPage'
 import BlogLeftPage from '../Pages/BlogLeftPage'
 import BlogRightPage from '../Pages/BlogRightPage'
@@ -55,6 +56,7 @@ class App extends Component {
                         <Route exact path="/musli" element={<Musli/>} />
                         <Route exact path="/cakarevic" element={<Cakarevic/>} />
                         <Route exact path="/vrabac" element={<Vrabac/>} />
+                        <Route exact path="/lawfamily" element={<LawtypeFamily/>} />
                     </Routes>
                 </BrowserRouter>
                 </Suspense>

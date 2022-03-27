@@ -73,31 +73,37 @@ const HomePageOne = () => {
       icon: "flaticon-parents",
       title: t("lawtype-family"),
       content: t("lawtype-family-desc"),
+      url: "/lawfamily"
     },
     {
       icon: "flaticon-wounded",
       title: t("lawtype-personalinjury"),
       content: t("lawtype-personalinjury-desc"),
+      url: "/lawpersonalinjury"
     },
     {
       icon: "flaticon-employee",
       title: t("lawtype-business"),
       content: t("lawtype-business-desc"),
+      url: "/lawbusiness"
     },
     {
       icon: "flaticon-thief",
       title: t("lawtype-criminal"),
       content: t("lawtype-criminal-desc"),
+      url: "/lawcriminal"
     },
     {
       icon: "flaticon-university-graduate-hat",
       title: t("lawtype-education"),
       content: t("lawtype-education-desc"),
+      url: "/laweducation"
     },
     {
       icon: "flaticon-house",
       title: t("lawtype-readestate"),
       content: t("lawtype-readestate-desc"),
+      url: "/lawrealestate"
     },
   ];
   return (
