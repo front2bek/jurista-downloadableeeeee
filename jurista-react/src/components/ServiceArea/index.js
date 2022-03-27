@@ -4,6 +4,7 @@ import "./style.scss";
 
 import { NavLink } from "react-router-dom";
 
+
 const ServiceArea = ({ className, title, subTitle, services }) => {
   return (
     <div className={className}>

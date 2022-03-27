@@ -61,9 +61,21 @@
     "lawtype-criminal-desc":"One of our area of expertise is criminal law",
     "lawtype-education":"Education Law",
     "lawtype-education-desc":"One of our area of expertise is education law",
-    "lawtype-readestate":"Read Estate Law",
-    "lawtype-readestate-desc":"One of our area of expertise is real estate law",
+    "lawtype-realestate":"Read Estate Law",
+    "lawtype-realestate-desc":"One of our area of expertise is real estate law",
     "lawtype-drugscrime":"Drugs Crime",
+    "lawtype-family-header":"Basic info about family law",
+    "lawtype-detailpersonalinjury-header":"Basic info about personal injury",
+    "lawtype-detailbusiness-header":"Basic info about business law",
+    "lawtype-detailcriminal-header":"Basic info about crminal law",
+    "lawtype-detaileducation-header":"Basic info about education law",
+    "lawtype-detailrealestate-header":"Basic info about real estate law",
+    "lawtype-detailfamily-desc":"Basic description about family law",
+    "lawtype-detailpersonalinjury-desc":"Basic description about personal injury",
+    "lawtype-detailbusiness-desc":"Basic description about business law",
+    "lawtype-detailcriminal-desc":"Basic description about crminal law",
+    "lawtype-detaileducation-desc":"Basic description about education law",
+    "lawtype-detailrealestate-desc":"Basic description about real estate law",
     "servicearea-howcanwehelp":"How Can We Help You",
     "servicearea-areaofexpertise":"Area Of Practice",
     "about-whyyouneedus":"Why You Need Us",
@@ -114,8 +126,9 @@
     "contactarea-atyourservice":"At your service",
     "contactarea-contactus":"Contact us",
     "contactarea-callusorfilltheform":"Call us at +381653938585 or fill out the form.",
-    "contactarea-contactusdesc":"This is the place where You can reach us at anytime. We would gladly help you."
+    "contactarea-contactusdesc":"This is the place where You can reach us at anytime. We would gladly help you.",
+    "Category": "Category"
 
-
+    
 
   }

@@ -79,37 +79,37 @@ const HomePageThree = () => {
       icon: "flaticon-parents",
       title: t("lawtype-family"),
       content: t("lawtype-family-desc"),
-      url: "/lawfamily"
+      url: "/lawtype/1"
     },
     {
       icon: "flaticon-wounded",
       title: t("lawtype-personalinjury"),
       content: t("lawtype-personalinjury-desc"),
-      url: "/lawpersonalinjury"
+      url: "/lawtype/2"
     },
     {
       icon: "flaticon-employee",
       title: t("lawtype-business"),
       content: t("lawtype-business-desc"),
-      url: "/lawbusiness"
+      url: "/lawtype/3"
     },
     {
       icon: "flaticon-thief",
       title: t("lawtype-criminal"),
       content: t("lawtype-criminal-desc"),
-      url: "/lawcriminal"
+      url: "/lawtype/4"
     },
     {
       icon: "flaticon-university-graduate-hat",
       title: t("lawtype-education"),
       content: t("lawtype-education-desc"),
-      url: "/laweducation"
+      url: "/lawtype/5"
     },
     {
       icon: "flaticon-house",
-      title: t("lawtype-readestate"),
-      content: t("lawtype-readestate-desc"),
-      url: "/lawrealestate"
+      title: t("lawtype-realestate"),
+      content: t("lawtype-realestate-desc"),
+      url: "/lawtype/6"
     },
   ];
 

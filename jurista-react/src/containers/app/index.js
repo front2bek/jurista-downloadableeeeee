@@ -56,6 +56,12 @@ class App extends Component {
                 path="/attorney/:attorneyName"
                 element={<SingleTeamPage />}
               />
+              {/* <Route exact path="/lawtype" element={<TeamPage />} /> */}
+              <Route
+                exact
+                path="/lawtype/:lawtypeid"
+                element={<PracticeSinglePage />}
+              />
               <Route exact path="/contact" element={<ContactPage />} />
               <Route exact path="/blog-left" element={<BlogLeftPage />} />
               <Route exact path="/blog-right" element={<BlogRightPage />} />

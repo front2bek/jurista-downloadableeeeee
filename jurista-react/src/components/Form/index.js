@@ -131,19 +131,19 @@ class Form extends Component {
         const { t } = this.props;
         const options = [
             { level: t("lawtype-family"), value: 'family law' },
-            { level: t("lawtype-criminal"), value: 'criminal law' },
-            { level: t("lawtype-business"), value: 'business law' },
             { level: t("lawtype-personalinjury"), value: 'personal injury' },
+            { level: t("lawtype-business"), value: 'business law' },
+            { level: t("lawtype-criminal"), value: 'criminal law' },
             { level: t("lawtype-education"), value: 'education law' },
-            { level: t("lawtype-drugscrime"), value: 'drugs crime' },
+            { level: t("lawtype-realestate"), value: 'drugs crime' },
         ]
         const cetagoryMenu = [
-            { level: t("lawtype-family"), route: "case-stadies-details" },
-            { level: t("lawtype-criminal"), route: "case-stadies-details" },
-            { level: t("lawtype-business"), route: "case-stadies-details" },
-            { level: t("lawtype-personalinjury"), route: "case-stadies-details" },
-            { level: t("lawtype-education"), route: "case-stadies-details" },
-            { name: t("lawtype-drugscrime"), route: "case-stadies-details" },
+            { level: t("lawtype-family"), route: "/lawtype/1" },
+            { level: t("lawtype-personalinjury"), route: "/lawtype/2" },
+            { level: t("lawtype-business"), route: "/lawtype/3" },
+            { level: t("lawtype-criminal"), route: "/lawtype/4" },
+            { level: t("lawtype-education"), route: "/lawtype/5" },
+            { level: t("lawtype-realestate"), route: "/lawtype/6" },
           ];
 
         return (

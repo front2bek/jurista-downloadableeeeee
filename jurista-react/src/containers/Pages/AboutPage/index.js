@@ -33,44 +33,44 @@ const AboutPage = () => {
     },
   ];
 
-  const services = [
-    {
-      icon: "flaticon-parents",
-      title: t("lawtype-family"),
-      content: t("lawtype-family-desc"),
-      url: "/lawfamily"
-    },
-    {
-      icon: "flaticon-wounded",
-      title: t("lawtype-personalinjury"),
-      content: t("lawtype-personalinjury-desc"),
-      url: "/lawpersonalinjury"
-    },
-    {
-      icon: "flaticon-employee",
-      title: t("lawtype-business"),
-      content: t("lawtype-business-desc"),
-      url: "/lawbusiness"
-    },
-    {
-      icon: "flaticon-thief",
-      title: t("lawtype-criminal"),
-      content: t("lawtype-criminal-desc"),
-      url: "/lawcriminal"
-    },
-    {
-      icon: "flaticon-university-graduate-hat",
-      title: t("lawtype-education"),
-      content: t("lawtype-education-desc"),
-      url: "/laweducation"
-    },
-    {
-      icon: "flaticon-house",
-      title: t("lawtype-readestate"),
-      content: t("lawtype-readestate-desc"),
-      url: "/lawrealestate"
-    },
-  ];
+  // const services = [
+  //   {
+  //     icon: "flaticon-parents",
+  //     title: t("lawtype-family"),
+  //     content: t("lawtype-family-desc"),
+  //     url: "/lawtype/1"
+  //   },
+  //   {
+  //     icon: "flaticon-wounded",
+  //     title: t("lawtype-personalinjury"),
+  //     content: t("lawtype-personalinjury-desc"),
+  //     url: "/lawtype/2"
+  //   },
+  //   {
+  //     icon: "flaticon-employee",
+  //     title: t("lawtype-business"),
+  //     content: t("lawtype-business-desc"),
+  //     url: "/lawtype/3"
+  //   },
+  //   {
+  //     icon: "flaticon-thief",
+  //     title: t("lawtype-criminal"),
+  //     content: t("lawtype-criminal-desc"),
+  //     url: "/lawtype/4"
+  //   },
+  //   {
+  //     icon: "flaticon-university-graduate-hat",
+  //     title: t("lawtype-education"),
+  //     content: t("lawtype-education-desc"),
+  //     url: "/lawtype/5"
+  //   },
+  //   {
+  //     icon: "flaticon-house",
+  //     title: t("lawtype-realestate"),
+  //     content: t("lawtype-realestate-desc"),
+  //     url: "/lawtype/6"
+  //   },
+  // ];
 
   return (
     <Fragment>
@@ -94,23 +94,23 @@ const AboutPage = () => {
         videoId="qP-7GNoDJ5c"
         pragraphs={aboutText}
       />
-      <ServiceArea
+      {/* <ServiceArea
         className="ourServiceArea"
         title={t("servicearea-howcanwehelp")}
         subTitle={t("servicearea-areaofexpertise")}
         services={services}
-      />
+      /> */}
       <Testmonial className="testmonialArea pt100" />
-      <CounterArea
+      {/* <CounterArea
         fullWidth={true}
         className="counterArea counterAreaStyleTwo"
-      />
-      <TeamMember
+      /> */}
+      {/* <TeamMember
         title={t("qualified_attorneys")}
         subTitle={t("meet_our_experts")}
         className="teamArea"
         slider={true}
-      />
+      /> */}
       {/* <BlogArea
         className="blogArea"
         title="Latest News"

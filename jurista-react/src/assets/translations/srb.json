@@ -59,9 +59,21 @@
     "lawtype-criminal-desc":"Jedno od naših reona je krivično pravo",
     "lawtype-education":"Obrazovno pravo",
     "lawtype-education-desc":"Jedno od naših reona je obrazovno pravo",
-    "lawtype-readestate":"Pravo nekretnina",
-    "lawtype-readestate-desc":"Jedno od naših reona je pravo nekretnina",
+    "lawtype-realestate":"Pravo nekretnina",
+    "lawtype-realestate-desc":"Jedno od naših reona je pravo nekretnina",
     "lawtype-drugscrime":"Droga",
+    "lawtype-detailfamily-header":"Osnovne informacije o porodičnom pravu",
+    "lawtype-detailpersonalinjury-header":"Osnovne informacije o telesnim povredama",
+    "lawtype-detailbusiness-header":"Osnovne informacije o biznis pravu",
+    "lawtype-detailcriminal-header":"Osnovne informacije o krivičnom pravu",
+    "lawtype-detaileducation-header":"Osnovne informacije o obrazovnom pravu",
+    "lawtype-detailrealestate-header":"Osnovne informacije o pravu nekretnina",
+    "lawtype-detailfamily-desc":"Osnovni opis o porodičnom pravu",
+    "lawtype-detailpersonalinjury-desc":"Osnovni opis o telesnim povredama",
+    "lawtype-detailbusiness-desc":"Osnovni opis o biznis pravu",
+    "lawtype-detailcriminal-desc":"Osnovni opis o krivičnom pravu",
+    "lawtype-detaileducation-desc":"Osnovni opis o obrazovnom pravu",
+    "lawtype-detailrealestate-desc":"Osnovni opis o pravu nekretnina",
     "servicearea-howcanwehelp":"Kako Vam možemo pomoći",
     "servicearea-areaofexpertise":"Područje rada",
     "about-whyyouneedus":"Zašto baš mi",
@@ -112,7 +124,8 @@
     "contactarea-atyourservice":"Vama na usluzi",
     "contactarea-contactus":"Kontaktirajte nas",
     "contactarea-callusorfilltheform":"Pozovite nas na +381653938585 ili putem mail-a pomoću forme sa strane.",
-    "contactarea-contactusdesc":"Ovo je mesto gde nas možete kontaktirati u svakom trenutku. Stojimo vam na usluzi."
+    "contactarea-contactusdesc":"Ovo je mesto gde nas možete kontaktirati u svakom trenutku. Stojimo vam na usluzi.",
+    "Category": "Kategorije"
     
   }
   

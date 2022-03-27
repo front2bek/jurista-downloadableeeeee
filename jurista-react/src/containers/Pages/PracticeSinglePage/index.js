@@ -14,6 +14,7 @@ import banner from '../../../images/practice/2.jpg'
 import single from '../../../images/practice/3.jpg'
 
 import './style.scss'
+import { useTranslation } from "react-i18next";
 
 
 const breadcumbMenu = [
@@ -25,6 +26,7 @@ const breadcumbMenu = [
 
 
 const PracticeSinglePage = () => {
+    const { t } = useTranslation();
     return (
         <Fragment>
             <header className="headerArea">
@@ -42,12 +44,12 @@ const PracticeSinglePage = () => {
                     <div className="row">
                         <div className="col-lg-4">
                             <aside className=" pr25">
-                                <BannerSidebar
+                                {/* <BannerSidebar
                                     image={banner}
                                     className="bannerWrapper"
-                                />
+                                /> */}
                                 <CetagorySidebar
-                                    title="Category"
+                                    title={t("Category")}
                                     className="cetagoryWrap"
                                 />
                             </aside>
