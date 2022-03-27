@@ -1,49 +1,202 @@
-import React, { Fragment } from 'react'
-import HeaderBotton from '../../../components/HeaderBottom'
-import HeaderTop from '../../../components/HeaderTop'
-import Breadcumb from '../../../components/Breadcumb'
-import NewsLetter from '../../../components/Newsletter'
-import FooterArea from '../../../components/FooterArea'
-import Portfolio from '../../../components/Portfolio'
-import ContactArea from '../../../components/ContactArea'
+import React, { Fragment } from "react";
+import HeaderBotton from "../../../components/HeaderBottom";
+import HeaderTop from "../../../components/HeaderTop";
+import Breadcumb from "../../../components/Breadcumb";
+import FooterArea from "../../../components/FooterArea";
+import { useTranslation } from "react-i18next";
+import { useParams } from "react-router";
 
 // images
 import breadcumb from '../../../images/breadcumb/ratnica2.jpg'
-import team from '../../../images/Attorneys-single/1.jpg'
-import portfolio1 from '../../../images/studies/1.jpg'
-import portfolio2 from '../../../images/studies/2.jpg'
-import portfolio3 from '../../../images/studies/3.jpg'
+import photoBircevic from '../../../images/expert/rsz_bircevic.jpg'
+import photoCakarevic from '../../../images/expert/rsz_cakarevic.jpg'
+import photoGagic from '../../../images/expert/rsz_gagic.jpg'
+import photoMusli from '../../../images/expert/rsz_musli.jpg'
+import photoVrabac from '../../../images/expert/rsz_vrabac.jpg'
+import photoZagorac from '../../../images/expert/rsz_zagorac.jpg'
 
-import './style.scss'
+import "./style.scss";
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
     { name: 'Attorneys', route: '/attorneys' },
     { name: 'Attorneys Details' }
 ]
-const teamMembarInfo = [
-    { level: 'Positon: ', text: 'Siniour Lawyer' },
-    { level: 'Practice Area: ', text: 'Family Lawyer, Criminal Defence, Personal Injury' },
-    { level: 'Experience: ', text: '10 Years' },
-    { level: 'Address: ', text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
-    { level: 'Phone: ', text: '0800.123.456' },
+
+const SingleTeamPage =() => {
+    const { t } = useTranslation();
+    const params = useParams();
+    const { attorneyName } = params;
+    let name = ''
+    let teamContents = ['KK Div Basket',
+    'KK Partizan',
+    'KK Radnicki']
+    let teamMembarInfo = [{ level: t("position"), text: 'Siniour Lawyer' },
+    { level: t("practice_area")+ ": ", text: 'Family Lawyer, Criminal Defence, Personal Injury' },
+    { level: t("experience")+ ": ", text: '10 Years' },
+    { level: t("address")+ ": ", text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
+    { level: t("phone") + ": ", text: '0800.123.456' },
     { level: 'Email: ', text: 'youremail@gmail.com' },
-    { level: 'Fax: ', text: ' 6985231456' },
-]
-const teamContents = [
-    'Admization Institute of Law andTechnology, Juzment School of Management,Cambridge',
-    'Academy University School of Law, Boston, MA',
-    'The Syntify High School Of New York',
-    'Education & Court Admissions',
-]
+    { level: 'Fax: ', text: ' 6985231456' }]
+    let photo = ''
+    const BircevicInfo = {
+        teamContents : [
+            'KK Div Basket',
+            'KK Partizan',
+            'KK Radnicki',
+        ],
+        name: "Bircevic",
+        teamMembarInfo : [
+            { level: t("position"), text: 'Siniour Lawyer' },
+            { level: t("practice_area")+ ": ", text: 'Family Lawyer, Criminal Defence, Personal Injury' },
+            { level: t("experience")+ ": ", text: '10 Years' },
+            { level: t("address")+ ": ", text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
+            { level: t("phone") + ": ", text: '0800.123.456' },
+            { level: 'Email: ', text: 'youremail@gmail.com' },
+            { level: 'Fax: ', text: ' 6985231456' },
+        ],
+        photo : photoBircevic
+    }
 
-const portfolioItem = [
-    { images: portfolio1, title: 'General Service', subtitle: 'Corporate' },
-    { images: portfolio2, title: 'Personal Issue', subtitle: 'General' },
-    { images: portfolio3, title: 'Business Accounting', subtitle: 'Business' },
-]
+    const CakarevicInfo = {
+        teamContents : [
+            'KK Div Basket Cakarevic',
+            'KK Partizan',
+            'KK Radnicki',
+        ],
+        name: "Cakarevic",
+        teamMembarInfo : [
+            { level: t("position"), text: 'Siniour Lawyer' },
+            { level: t("practice_area")+ ": ", text: 'Family Lawyer, Criminal Defence, Personal Injury' },
+            { level: t("experience")+ ": ", text: '10 Years' },
+            { level: t("address")+ ": ", text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
+            { level: t("phone") + ": ", text: '0800.123.456' },
+            { level: 'Email: ', text: 'youremail@gmail.com' },
+            { level: 'Fax: ', text: ' 6985231456' },
+        ],
+        photo : photoCakarevic
+    }
 
-const SingleTeamPage = () => {
+    const GagicInfo = {
+        teamContents : [
+            'KK Div Basket',
+            'KK Partizan',
+            'KK Radnicki',
+        ],
+        name: "Gagic",
+        teamMembarInfo : [
+            { level: t("position"), text: 'Siniour Lawyer' },
+            { level: t("practice_area")+ ": ", text: 'Family Lawyer, Criminal Defence, Personal Injury' },
+            { level: t("experience")+ ": ", text: '10 Years' },
+            { level: t("address")+ ": ", text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
+            { level: t("phone") + ": ", text: '0800.123.456' },
+            { level: 'Email: ', text: 'youremail@gmail.com' },
+            { level: 'Fax: ', text: ' 6985231456' },
+        ],
+        photo : photoGagic
+    }
+
+    const MusliInfo = {
+        teamContents : [
+            'KK Div Basket',
+            'KK Partizan',
+            'KK Radnicki',
+        ],
+        name: "Musli",
+        teamMembarInfo : [
+            { level: t("position"), text: 'Siniour Lawyer' },
+            { level: t("practice_area")+ ": ", text: 'Family Lawyer, Criminal Defence, Personal Injury' },
+            { level: t("experience")+ ": ", text: '10 Years' },
+            { level: t("address")+ ": ", text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
+            { level: t("phone") + ": ", text: '0800.123.456' },
+            { level: 'Email: ', text: 'youremail@gmail.com' },
+            { level: 'Fax: ', text: ' 6985231456' },
+        ],
+        photo : photoMusli
+    }
+
+    const VrabacInfo = {
+        teamContents : [
+            'KK Div Basket',
+            'KK Partizan',
+            'KK Radnicki',
+        ],
+        name: "Vrabac",
+        teamMembarInfo : [
+            { level: t("position"), text: 'Siniour Lawyer' },
+            { level: t("practice_area")+ ": ", text: 'Family Lawyer, Criminal Defence, Personal Injury' },
+            { level: t("experience")+ ": ", text: '10 Years' },
+            { level: t("address")+ ": ", text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
+            { level: t("phone") + ": ", text: '0800.123.456' },
+            { level: 'Email: ', text: 'youremail@gmail.com' },
+            { level: 'Fax: ', text: ' 6985231456' },
+        ],
+        photo : photoVrabac
+    }
+
+    const ZagoracInfo = {
+        teamContents : [
+            'KK Div Basket',
+            'KK Partizan',
+            'KK Radnicki',
+        ],
+        name: "Zagorac",
+        teamMembarInfo : [
+            { level: t("position"), text: 'Siniour Lawyer' },
+            { level: t("practice_area")+ ": ", text: 'Family Lawyer, Criminal Defence, Personal Injury' },
+            { level: t("experience")+ ": ", text: '10 Years' },
+            { level: t("address")+ ": ", text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
+            { level: t("phone") + ": ", text: '0800.123.456' },
+            { level: 'Email: ', text: 'youremail@gmail.com' },
+            { level: 'Fax: ', text: ' 6985231456' },
+        ],
+        photo : photoZagorac
+    }
+
+    console.log(attorneyName);
+    switch (attorneyName) {
+        
+      case "1":
+        teamContents = BircevicInfo.teamContents;
+        teamMembarInfo = BircevicInfo.teamMembarInfo
+        name = BircevicInfo.name;
+        photo = BircevicInfo.photo;
+        break;
+      case "2":
+        teamContents = CakarevicInfo.teamContents;
+        teamMembarInfo = CakarevicInfo.teamMembarInfo
+        name = CakarevicInfo.name;
+        photo = CakarevicInfo.photo;
+        break;
+        case "3":
+            teamContents = GagicInfo.teamContents;
+            teamMembarInfo = GagicInfo.teamMembarInfo
+            name = GagicInfo.name;
+            photo = GagicInfo.photo;
+            break;
+        case "4":
+                teamContents = MusliInfo.teamContents;
+                teamMembarInfo = MusliInfo.teamMembarInfo
+                name = MusliInfo.name;
+                photo = MusliInfo.photo;
+                break;
+        case "5":
+                    teamContents = VrabacInfo.teamContents;
+                    teamMembarInfo = VrabacInfo.teamMembarInfo
+                    name = VrabacInfo.name;
+                    photo = VrabacInfo.photo;
+                    break;
+        case "6":
+                        teamContents = ZagoracInfo.teamContents;
+                        teamMembarInfo = ZagoracInfo.teamMembarInfo
+                        name = ZagoracInfo.name;
+                        photo = ZagoracInfo.photo;
+                        break;
+      default:
+        // Must throw here
+        throw new Error(`Invalid : Page does not exist`);
+    }
+
     return (
         <Fragment>
             <header className="headerArea">
@@ -64,14 +217,14 @@ const SingleTeamPage = () => {
                                 <div className="col-md-6 col-12">
                                     <div className="singleTeamImgWrap">
                                         <div className="singleTeamImg">
-                                            <img src={team} alt="" />
+                                            <img src={photo} alt="" />
                                         </div>
-                                        <h4>Lily Watson</h4>
+                                        <h4>{name}</h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-12">
                                     <div className="singleTeamContent">
-                                        <h4>Important Information</h4>
+                                        <h4>{t("informations")}</h4>
                                         <ul className="teamMembarInfo">
                                             {teamMembarInfo.map((teamInfo, i) => (
                                                 <li key={i}>
@@ -90,16 +243,16 @@ const SingleTeamPage = () => {
                                 </div>
                                 <div className="col-12">
                                     <div className="singleTeamInfo">
-                                        <h3>Personal Experience</h3>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                                        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words,</p>
-                                        <h5>Education</h5>
+                                        <h3>{t("experience")}</h3>
+                                        <p>{t("single_experience1")}</p>
+                                        <p>{t("single_experience2")}</p>
+                                        <h5>{t("education")}</h5>
                                         <ul>
                                             {teamContents.map(teamContent => (
                                                 <li key={teamContent}>{teamContent}</li>
                                             ))}
                                         </ul>
-                                        <h5>Language</h5>
+                                        <h5>{t("languages")}</h5>
                                         <span>French(fluent), English (fluent), Greek , chinese.</span>
                                     </div>
                                 </div>
@@ -118,11 +271,30 @@ const SingleTeamPage = () => {
             {/* <ContactArea
                 className="contactArea"
             />
-            {/* <NewsLetter
+            <NewsLetter
                 className="newsLetterArea"
             /> */}
             <FooterArea />
         </Fragment>
     )
+
+    // console.log(param.attorneyName);
+    // switch(param.attorneyName){
+    //     case 'bircevic':
+    //         return <Bircevic/>;
+    //     case 'zagorac':
+    //         return <Zagorac/>;
+    //     case 'gagic':
+    //         return <Gagic/>;
+    //     case 'Musli':
+    //         return <Musli/>;
+    //     case 'cakarevic':
+    //         return <Cakarevic/>;
+    //     case 'vrabac':
+    //         return <Vrabac/>;
+    //         default:
+    //         return <Bircevic/>;
+    // }
 }
-export default SingleTeamPage
+
+export default SingleTeamPage;

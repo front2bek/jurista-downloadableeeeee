@@ -27,14 +27,7 @@ const teamContents = [
     'KK Div Basket',
     'KK Partizan',
     'KK Radnicki',
-    'KK Partizan',
 ]
-
-// const portfolioItem = [
-//     { images: portfolio1, title: 'General Service', subtitle: 'Corporate' },
-//     { images: portfolio2, title: 'Personal Issue', subtitle: 'General' },
-//     { images: portfolio3, title: 'Business Accounting', subtitle: 'Business' },
-// ]
 
 const SingleTeamPage = () => {
     const { t } = useTranslation();
