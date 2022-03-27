@@ -8,11 +8,11 @@ import Portfolio from '../../../components/Portfolio'
 // images
 import breadcumb from '../../../images/breadcumb/ratnica2.jpg'
 // images
-import portfolio1 from '../../../images/studies/partizan.jpg'
-import portfolio2 from '../../../images/studies/partizan.jpg'
-import portfolio3 from '../../../images/studies/partizan.jpg'
-import portfolio4 from '../../../images/studies/partizan.jpg'
-import portfolio5 from '../../../images/studies/partizan.jpg'
+import portfolio1 from '../../../images/studies/tesla1.jpeg'
+import portfolio2 from '../../../images/studies/tesla1.jpeg'
+import portfolio3 from '../../../images/studies/tesla1.jpeg'
+import portfolio4 from '../../../images/studies/tesla1.jpeg'
+import portfolio5 from '../../../images/studies/tesla1.jpeg'
 import { useTranslation } from "react-i18next";
 
 import './style.scss'
