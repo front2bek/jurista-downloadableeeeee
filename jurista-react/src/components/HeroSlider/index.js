@@ -31,9 +31,6 @@ class HeroSlider extends Component {
                                     <div className="col col-lg-8">
                                         <p>{slider.text}</p>
                                         <h2><span>{slider.title}</span> <span>{slider.subTitle}</span></h2>
-                                        <div className="btnStyle btnStyle3">
-                                            <a href="#">{slider.button}</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

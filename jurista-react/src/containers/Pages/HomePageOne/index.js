@@ -20,11 +20,11 @@ import about from "../../../images/custom/aboutus2.jpg";
 import signature from "../../../images/about/1.png";
 
 // images
-import portfolio1 from "../../../images/studies/1.jpg";
-import portfolio2 from "../../../images/studies/2.jpg";
-import portfolio3 from "../../../images/studies/3.jpg";
-import portfolio4 from "../../../images/studies/4.jpg";
-import portfolio5 from "../../../images/studies/5.jpg";
+import portfolio1 from "../../../images/studies/tesla1.jpeg";
+import portfolio2 from "../../../images/studies/tesla1.jpeg";
+import portfolio3 from "../../../images/studies/tesla1.jpeg";
+import portfolio4 from "../../../images/studies/tesla1.jpeg";
+import portfolio5 from "../../../images/studies/tesla1.jpeg";
 import { useTranslation } from "react-i18next";
 
 const HomePageOne = () => {

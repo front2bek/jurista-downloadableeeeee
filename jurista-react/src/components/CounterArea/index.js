@@ -8,7 +8,7 @@ const CounterArea = ({ className, fullWidth }) => {
     const counters = [
         { value: '95', title: t('tile_percent_won_cases'), level: '%' },
         { value: '863', title: t('tile_numberofclients') },
-        { value: '126', title: t('tile_numberoflawyers') },
+        { value: '11', title: t('tile_numberoflawyers') },
         { value: '25', title: t('tile_percent_dismissed_cases'), level: '%' },
     ];
     return (
