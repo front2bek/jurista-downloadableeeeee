@@ -33,7 +33,7 @@ const HeaderBottom = props => {
                                 <NavLink to="/">
                                     <img className="logoImg" src={logo2} alt="" />
                                 </NavLink>
-                                <span style={{color: "#c0b596"}}> Adv kanc Pantelic - Popovic</span>
+                                <span style={{color: "#c0b596"}}> Adv kanc Pantelić - Popović</span>
                             </div>
                         </div>
                         <div className={responsive ? "col-lg-8 responsiveWrapper active" : "col-lg-8 responsiveWrapper"}>
